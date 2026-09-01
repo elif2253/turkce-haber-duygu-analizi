@@ -10,7 +10,6 @@ CORS(app)  # Frontend (farklı porttan) bu API'ye erişebilsin diye
 # Haberleri her seferinde yeniden çekip analiz etmemek için basit bir önbellek
 onbellek = {"veri": None}
 
-
 @app.route("/api/news", methods=["GET"])
 def get_news():
     """
